@@ -1,5 +1,4 @@
 require 'spec_helper'
-require 'link'
 
 describe Link do
 
@@ -13,7 +12,7 @@ describe Link do
     expect(link.title).to eq('Makers Academy')
     link.destroy
     expect(Link.count).to eq(0)
-    end
+  end
 
  
 

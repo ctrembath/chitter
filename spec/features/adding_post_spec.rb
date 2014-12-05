@@ -1,5 +1,7 @@
 require 'spec_helper'
 
+
+
   feature "User adds a new post" do
     scenario "when browsing the homepage" do
       expect(Post.count).to eq(0)

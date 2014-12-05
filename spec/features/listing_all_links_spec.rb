@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+
 feature "user browses the list of posts" do
 
   # before(:each) do 
@@ -10,4 +11,6 @@ feature "user browses the list of posts" do
     visit('/')
     expect(page).to have_content("chitta")
   end
+
+
 end

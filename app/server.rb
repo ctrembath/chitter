@@ -4,7 +4,6 @@ require './lib/posts'
 require './lib/user'
 
 require_relative 'helpers/application'
-
 require_relative 'data_mapper_setup'
 
 enable :sessions
@@ -32,7 +31,8 @@ end
 
 post '/users' do
   @user=User.create(:email => params[:email],
-              :password => params[:password])
+              :password => params[:password],
+              :password_confirmation => params[:password_confirmation])
   session[:user_id] = @user.id
   redirect to('/')
 end
